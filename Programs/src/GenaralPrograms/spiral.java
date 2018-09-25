@@ -23,7 +23,7 @@ while(count<=no*no)
 	}
 	for(int j=minrow+1;j<=maxrow;j++)
 	{
-		mat[j][maxrow]=count;
+		mat[j][maxcol]=count;
 		count++;
 	}
 	for(int k=maxcol-1;k>=mincol;k--)
@@ -42,9 +42,9 @@ while(count<=no*no)
 	maxcol--;
 	
 }
-for(int i=0;i<mat.length;i++)
+for(int i=0;i<no;i++)
 {
-	for(int j=0;j<mat.length;j++)
+	for(int j=0;j<no;j++)
 	{
 		System.out.print(mat[i][j]+"\t");
 		

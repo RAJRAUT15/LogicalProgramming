@@ -36,11 +36,7 @@ public class Zero {
 		int count=0;
 		while(temp>=0)
 		{
-			if(temp==primeno)
-			{
-				temp=temp-1;
-				count++;
-			}
+			
 			if(temp%primeno==0)
 			{
 				temp=primeno;

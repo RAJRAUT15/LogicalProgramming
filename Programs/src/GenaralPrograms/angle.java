@@ -19,7 +19,9 @@ public class angle {
 		}
 		int hour_ang=(int)(0.5*(h*60+m));
 		int minute_ang=(int)(6*m);
-		int angle=Math.abs(hour_ang-minute_ang);
+		int angle=hour_ang-minute_ang;
+		if(angle<0)
+			angle= -1* angle;
 		angle=Math.min(360-angle,angle);
 		return angle;
 		
@@ -28,8 +30,8 @@ public class angle {
 	
 	public static void main(String x[])
 	{
-		System.out.println(calangle(9,60)+" Degree");
-		System.out.println(calangle(12,15)+" Degree");
+		System.out.println(calangle(3,20)+" Degree");
+		System.out.println(calangle(12,30)+" Degree");
 		
 		
 	}
